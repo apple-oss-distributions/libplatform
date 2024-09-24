@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2004-2016 Apple Inc. All rights reserved.
+ * Copyright (c) 2004-2023 Apple Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  *
@@ -21,8 +21,8 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 
-#ifndef _OSATOMIC_PRIVATE_H_
-#define _OSATOMIC_PRIVATE_H_
+#ifndef _OSATOMICPRIVATE_H_
+#define _OSATOMICPRIVATE_H_
 
 #include <sys/cdefs.h>
 
@@ -31,14 +31,6 @@
 		__has_include(<libkern/OSAtomicQueue.h>)
 
 
-#include <libkern/OSAtomicDeprecated.h>
-#include <libkern/OSSpinLockDeprecated.h>
-#include <libkern/OSAtomicQueue.h>
-
-#else
-
-#include_next <libkern/OSAtomic.h>
-
 #endif
 
-#endif // _OSATOMIC_PRIVATE_H_
+#endif // _OSATOMICPRIVATE_H_
